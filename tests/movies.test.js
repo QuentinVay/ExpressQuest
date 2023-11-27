@@ -18,7 +18,7 @@ describe("GET /api/movies/:id", () => {
     expect(response.status).toEqual(200);
   });
 
-  it("should return all id movies", async () => {
+  it("should return an error 404", async () => {
     const response = await request(app).get("/api/movies/0");
 
     expect(response.status).toEqual(404);
