@@ -19,7 +19,7 @@ describe("GET /api/movies/:id", () => {
   });
 
   it("should return all id movies", async () => {
-    const response = await request(app).get("/api/movies/4");
+    const response = await request(app).get("/api/movies/0");
 
     expect(response.status).toEqual(404);
   });
